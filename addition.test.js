@@ -1,6 +1,8 @@
 // The operation should return the sum of 2 numbers
 
-const { addition } = require('./addition')
+// addition
+
+const { addition, checkPalindrome } = require('./addition')
 
 test('2 + 4 = 6', () => {
     expect(addition(2,4)).toBe(6)
@@ -23,5 +25,15 @@ test.each([[3, 4, 7], [5, -10, -5], [0, 2, 2]])(
         expect(addition(a,b)).toBe(expected)
     }
 )
+
+// palindrome tests
+
+test('hello = false', () => {
+    expect(checkPalindrome('hello')).toBe(false)
+})
+
+test('racecar = true', () => {
+    expect(checkPalindrome('racecar')).toBe(true)
+})
 
 // You can do test.skip to have a test avoided in a pull request/test
