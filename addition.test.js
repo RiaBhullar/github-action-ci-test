@@ -6,6 +6,10 @@ test('2 + 4 = 6', () => {
     expect(addition(2,4)).toBe(6)
 })
 
+test('3 + 7 = 10', () => {
+    expect(addition(2,4)).toBe(6)
+})
+
 test('3 + 3 = 6', () => {
     expect(addition(2,4)).toBe(6)
 })
